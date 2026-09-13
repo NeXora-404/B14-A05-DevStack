@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <rect width="96" height="96" rx="16" fill="#102a2d" />
+  <path d="M30 68C36 56 41 49 50 49C55 49 58 45 58 40C61 44 63 47 68 47C72 47 75 43 76 38C72 50 68 52 63 56C60 61 58 65 53 68C48 70 44 70 40 68C37 67 34 68 30 68Z" fill="#38bdf8" />
+  <path d="M30 32C34 29 38 29 42 30C46 31 49 34 51 36C54 38 57 42 59 45C61 43 63 43 66 44C68 39 68 36 66 32C64 27 59 24 54 24C48 24 45 28 41 30C37 32 35 31 30 32Z" fill="#a7f3d0" />
+  <text x="48" y="86" text-anchor="middle" font-family="Inter, Arial" font-size="10" font-weight="700" fill="#d6fff6">Tailwind</text>
+</svg>

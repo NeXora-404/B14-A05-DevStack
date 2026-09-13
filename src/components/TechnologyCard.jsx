@@ -1,12 +1,14 @@
 import React from "react";
 
 function TechnologyCard({ technology, added, onAdd }) {
+  const icon = technology.icon || "/assets/technology-icon.svg";
+
   return (
     <article className="technology-card">
       <div className="card-top">
         <img
           className="technology-icon"
-          src={technology.icon}
+          src={icon}
           alt={`${technology.name} icon`}
         />
 
