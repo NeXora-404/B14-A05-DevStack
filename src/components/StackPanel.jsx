@@ -11,7 +11,7 @@ function StackPanel({ selectedTechnologies, onRemove, onRemoveAll }) {
       <h2>Your Stack</h2>
 
       <p className="stack-count">
-        {count} Technology{count === 1 ? "" : "ies"} Selected
+        {count} {count === 1 ? "Technology" : "Technologies"} Selected
       </p>
 
       {count === 0 ? (
