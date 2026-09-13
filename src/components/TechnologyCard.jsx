@@ -2,7 +2,7 @@ import React from "react";
 
 function TechnologyCard({ technology, added, onAdd }) {
   return (
-    <article className={`technology-card ${added ? "is-added" : ""}`}>
+    <article className="technology-card">
       <div className="card-top">
         <img
           className="technology-icon"
