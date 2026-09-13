@@ -15,7 +15,7 @@ function StackPanel({ selectedTechnologies, onRemove, onRemoveAll }) {
       </p>
 
       {count === 0 ? (
-        <div className="empty-stack">Your stack is empty.</div>
+        <div className="empty-stack">No technologies selected yet.</div>
       ) : (
         <>
           <div className="selected-list">

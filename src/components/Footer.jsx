@@ -12,14 +12,14 @@ function Footer() {
           <p>Curated tools, technologies, and resources for developers building modern software.</p>
           <div className="social-links">
             <a href="https://github.com/">GitHub</a>
-            <a href="https://twitter.com/">Twitter</a>
+            <a href="https://x.com/">X</a>
             <a href="https://linkedin.com/">LinkedIn</a>
           </div>
         </div>
 
-        <FooterLinks title="PRODUCT" links={[["Home", "#home"], ["Technologies", "#technologies"], ["Projects", "#projects"]]} />
-        <FooterLinks title="COMPANY" links={[["About", "#about"], ["Contact", "#contact"], ["Careers", "#careers"]]} />
-        <FooterLinks title="LEGAL" links={[["Privacy Policy", "#privacy"], ["Terms of Service", "#terms"]]} />
+        <FooterLinks title="Product" links={[["Home", "#home"], ["Technologies", "#technologies"], ["Projects", "#projects"]]} />
+        <FooterLinks title="Company" links={[["About", "#about"], ["Contact", "#contact"], ["Careers", "#careers"]]} />
+        <FooterLinks title="Legal" links={[["Privacy Policy", "#privacy"], ["Terms of Service", "#terms"]]} />
       </div>
 
       <div className="container footer-bottom">

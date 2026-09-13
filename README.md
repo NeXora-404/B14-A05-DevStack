@@ -1,47 +1,46 @@
 # Dev Stack
 
-A responsive React + Vite application for exploring modern development technologies and building a personalized technology stack.
+Dev Stack is a responsive React and Vite application designed to help users explore modern development technologies and build a personalized technology stack.
 
 ## Features
 
-- Responsive navigation with mobile menu.
-- Hero, technology cards, stack panel, and footer.
+- Responsive navigation with a mobile menu.
+- Hero section, technology card grid, stack panel, and footer.
 - Technology data loaded from `public/data/technologies.json`.
-- Add technologies to **Your Stack** with duplicate protection.
-- Remove one technology or clear the complete stack.
-- Toast notifications for user actions and data-loading errors.
-- Accessible buttons, labels, focus states, and live status messages.
-- Responsive desktop, tablet, and mobile layouts.
+- Add technologies to the personal stack with duplicate protection.
+- Remove selected technologies individually or clear the full stack.
+- Toast notifications for user feedback and technology-loading errors.
+- Accessible controls, semantic labels, visible focus states, and live loading feedback.
+- Responsive layouts for desktop, tablet, and mobile screens.
 
 ## Tech Stack
 
-- React 
+- React
 - Vite
 - JavaScript (ES6+)
 - CSS
-- React-Toastify
+- React Toastify
 - JSON
 
-
-## React questions
+## React Questions
 
 ### 1. What is JSX, and why is it used in React?
-JSX is a syntax that lets us write HTML-like UI structure inside JavaScript. It makes React component code easier to read and maintain.
+JSX is a syntax that allows HTML-like UI structures to be written directly inside JavaScript. It improves readability and makes React component structure easier to maintain.
 
 ### 2. What is the difference between props and state?
-Props are values passed from a parent component to a child. State is data managed by a component that can change over time and update the UI.
+Props are values passed from a parent component to a child component. State is component-owned data that can change over time and update the user interface when changed.
 
-### 3. What does `useState` do, and where is it used here?
-`useState` stores changing data. This project uses it for the loaded technologies, selected stack IDs, loading state, and data-loading error state.
+### 3. What does `useState` do, and where is it used in this project?
+`useState` stores data that changes over time. In this project, it tracks the loaded technology list, selected technology IDs, loading status, and error state.
 
 ### 4. What does `useEffect` do, and why is it needed?
-`useEffect` handles side effects after rendering. It is used here to fetch the technology JSON when the application starts.
+`useEffect` runs side effects after a component renders. In this project, it fetches the technology list from the JSON file when the application starts.
 
 ### 5. Why does a `.map()` list need a unique `key`?
-The key gives React a stable identity for each item, helping React update only the elements that changed.
+A `key` gives each rendered element a stable identity so React can update the UI efficiently and avoid unnecessary re-renders.
 
 ### 6. What is conditional rendering?
-Conditional rendering means showing different UI based on a condition. For example, the stack panel shows an empty-state message when no technology is selected.
+Conditional rendering displays different UI content based on a condition. For example, the stack panel displays an empty-state message when no technology is selected.
 
 ### 7. How does data move between parent and child components?
-A parent passes data and callback functions through props. Child components use those callbacks to request changes in the parent's state.
+A parent component passes data and callback functions through props. Child components call those callbacks when the user performs an action, allowing the parent to update shared state.
